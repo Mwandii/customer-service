@@ -19,7 +19,7 @@ export default async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from:    "Evalyne Site <no-reply@yourdomain.com>",
+      from: "Evalyne Site <onboarding@resend.dev>",
       to:      process.env.CONTACT_EMAIL,
       replyTo: email,
       subject: `New message from ${name}`,
